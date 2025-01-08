@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="tasks-container">
+        <ul id="todoList"></ul>
+    </div>
+
     <div class="container">
+        <div class="todo-container">
+            <h2>To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button id="addTodo">Add</button>
+            <ul id="todoList"></ul>
+        </div>
         <h1>Pomodoro Timer</h1>
+        <button id="shortBreak">5 Min</button>
+        <button id="longBreak">10 Min</button>
         <div id="timer">25:00</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
         <button id="start">Start</button>
         <button id="reset">Reset</button>
         <div id="status"></div>
-    </div>
-    <div class="embed-container">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <script src="script.js"></script>
+
+        <div class="embed-container">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator" width="100%"
+                height="252" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+        <script src="script.js"></script>
 </body>
+
 </html>
